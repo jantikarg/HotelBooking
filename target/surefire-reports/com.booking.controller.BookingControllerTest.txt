@@ -1,0 +1,13 @@
+-------------------------------------------------------------------------------
+Test set: com.booking.controller.BookingControllerTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 7.939 sec <<< FAILURE! - in com.booking.controller.BookingControllerTest
+getHealthCheck(com.booking.controller.BookingControllerTest)  Time elapsed: 0.177 sec  <<< FAILURE!
+java.lang.AssertionError: Response content
+Expected: "Hotel Booking Spring Boot App is Up and Running!"
+     but: was ""
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at org.springframework.test.web.servlet.result.ContentResultMatchers$4.match(ContentResultMatchers.java:137)
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:171)
+	at com.booking.controller.BookingControllerTest.getHealthCheck(BookingControllerTest.java:43)
+
